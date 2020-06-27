@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/mv_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/make_a_call"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/mv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mc Donald "
+            android:layout_toRightOf="@id/mv_image"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RatingBar
+            android:id="@+id/mv_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@id/mv_title"
+            android:layout_toRightOf="@id/mv_image"
+            android:layout_marginLeft="10dp"
+            android:rating="3.5"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mv_desc"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="dummy dummy du mmy"
+            android:layout_toRightOf="@id/mv_image"
+            android:layout_below="@id/mv_ratingbar"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

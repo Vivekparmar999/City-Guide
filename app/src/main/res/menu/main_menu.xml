@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/search"/>
+
+
+        <item
+            android:id="@+id/nav_search"
+            android:title="Search"
+            android:icon="@drawable/search"/>
+
+
+        <item
+            android:id="@+id/nav_all_category"
+            android:title="nav all category"
+            android:icon="@drawable/search"/>
+
+
+        <item
+            android:id="@+id/nav_add_missing_place"
+            android:title="Add missing place"
+            android:icon="@drawable/search"/>
+    </group>
+
+    <item android:title="profile">
+    <menu>
+        <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_login"
+                android:title="Login"
+                android:icon="@drawable/search"/>
+
+
+            <item
+                android:id="@+id/nav_profile"
+                android:title="Profile"
+                android:icon="@drawable/search"/>
+
+
+            <item
+                android:id="@+id/nav_logout"
+                android:title="log out"
+                android:icon="@drawable/search"/>
+        </group>
+    </menu>
+    </item>
+
+    <item android:title="category">
+    <menu>
+        <group
+            android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_restaurant"
+                android:title="Restaurant"
+                android:icon="@drawable/search"/>
+
+
+            <item
+                android:id="@+id/nav_education"
+                android:title="Education"
+                android:icon="@drawable/search"/>
+        </group>
+    </menu>
+    </item>
+
+    <item android:title="Share">
+    <menu>
+        <group
+            android:checkableBehavior="none">
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share"
+                android:icon="@drawable/search"/>
+
+
+            <item
+                android:id="@+id/nav_rate_us"
+                android:title="Rate Us"
+                android:icon="@drawable/search"/>
+        </group>
+    </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.OnBoarding"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        app:layout_constraintEnd_toEndOf="@+id/viewPager"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="10dp"
+        android:background="#00000000"
+        android:drawableEnd="@drawable/skip_icon"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:paddingRight="10dp"
+        android:onClick="skip"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/get_started_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lets get Started"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:background="@color/colorPrimary"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="30dp"/>
+
+            <Button
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/next_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:text="Next"
+                android:onClick="next"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawableRight="@drawable/right_arrow_icon"
+                android:background="#00000000"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
